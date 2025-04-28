@@ -11,7 +11,9 @@ function Header({ name }) {
       <nav>
         <ul><li>
           <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link></li>
+          <Link to='/about'>About</Link>
+          <Link to='/books'>Books</Link></li>
+         
           <li>Home</li>
           <li>About</li>
           <li>Projects</li>

@@ -2,15 +2,15 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
 
-function About() {
+
+function Add() {
   return (
     <div>
       <Header />
-      <h1>I am About</h1>
-
+      <h1>I'm Add</h1>
       <Footer year={2025} />
     </div>
   );
 }
 
-export default About;
+export default Add;
