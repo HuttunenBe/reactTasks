@@ -12,7 +12,8 @@ function Header({ name }) {
         <ul><li>
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>
-          <Link to='/books'>Books</Link></li>
+          <Link to='/books'>Books</Link>
+          <Link to='/add'>Add</Link></li>
          
           <li>Home</li>
           <li>About</li>
