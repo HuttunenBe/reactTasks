@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { books } from "./booksData";
+import { books } from "../../data/booksData";
 import BookCard from "./BooksCard";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -50,7 +50,7 @@ const BookList = () => {
 
   return (
     <>
-      <h1>Books List</h1>
+      <h1 className="styles">Books List</h1>
 
       <input
         type="text"

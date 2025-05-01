@@ -15,10 +15,10 @@ function Header({ name }) {
           <Link to='/books'>Books</Link>
           <Link to='/add'>Add</Link></li>
          
-          <li>Home</li>
+          {/*<li>Home</li>
           <li>About</li>
           <li>Projects</li>
-          <li>Skills</li>
+          <li>Skills</li>*/}
         </ul>
       </nav>
     </header>

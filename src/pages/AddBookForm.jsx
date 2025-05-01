@@ -1,6 +1,11 @@
-import Header from "../components/Footer/Footer";
-import Footer from "../components/Header/Header";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import { useState } from "react";
+import { useNavigate } from "react-router";
+import "./pages.css";
+
+
+
 
 function AddBookForm(onAddBook) {
   const [title, setTitle] = useState(""); // step 1
@@ -26,7 +31,7 @@ function AddBookForm(onAddBook) {
   };
 
   return (
-    <div>
+    <div className = 'bodyContainer'>
       <Header />
       <main>
         <h1>I'm book form!</h1>

@@ -1,4 +1,4 @@
-import "./Books.css";
+import "./book.css";
 import { useState } from "react";
 
 const BookCard = ({
@@ -30,6 +30,7 @@ setIsEditing(!isEditing)
 }
 
   return (
+    <div className="styles">
     <div className="ticket">
       <div className="ticketRing">
         <h2>{title}</h2>
@@ -76,6 +77,7 @@ setIsEditing(!isEditing)
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

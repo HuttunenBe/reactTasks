@@ -1,0 +1,16 @@
+.bodyContainer {
+  background-color: rgb(56, 167, 167);
+}
+
+.window {
+  background-color: rgba(240, 248, 255, 0.544);
+}
+
+main {
+  background-color: rgb(235, 215, 250);
+  min-height: 100vh;
+}
+
+body {
+  background-color: black;
+}

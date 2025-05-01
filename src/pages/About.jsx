@@ -1,17 +1,15 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import "./pages.css";
 
 
 
-function About() {
+const About = () => {
   return (
-    <div>
-      <Header />
-      <h1>I am About</h1>
-
-      <Footer year={2025} />
-    </div>
+    <>
+      <h1>I am about component </h1>
+    </>
   );
-}
+};
 
 export default About;
