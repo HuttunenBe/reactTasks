@@ -1,0 +1,18 @@
+.addForm{
+    background-color: rgba(255, 255, 255, 0.911);
+    width: 50vw;
+    margin: 0 auto;
+    border-radius: 2rem;
+   height: 50vh;
+}
+
+h3{
+    color:rgb(29, 8, 8);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+button, input{
+    padding: 0.6rem 1rem;
+}

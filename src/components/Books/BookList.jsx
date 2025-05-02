@@ -1,42 +1,51 @@
 import { useState } from "react";
-import { books } from "../../data/booksData";
-import BookCard from "./BooksCard";
+
+import BookCard from "./BookCard";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-
-
-
-const BookList = () => {
-  const [booksData, setBooksData] = useState(books);
+const BookList = ({ booksData, setBooksData }) => {
+  console.log("Books Data in BookList:", booksData);
   const [searchValue, setSearchValue] = useState("");
+
+
 
   const eventHandler = (id) => {
     console.log("read more button was clicked", id);
   };
 
+
   const toggleStock = (id) => {
     const updatedArray = booksData.map((book) =>
       book.id === id ? { ...book, inStock: !book.inStock } : book
     );
-    console.log("Works");
+    console.log("Stock toggled");
     setBooksData(updatedArray);
   };
 
+ 
   const toggleFavorite = (id) => {
     setBooksData((prevState) =>
       prevState.map((book) =>
-        book.id === id ? { ...book, isFavorite: !book.isFavorite } : book
+        book.id === Number(id) ? { ...book, isFavorite: !book.isFavorite } : book
       )
     );
-    console.log("is this working");
+    console.log("Favorite toggled");
   };
 
   const filteredBooks = booksData.filter((book) => {
-    return book.title.toLowerCase().startsWith(searchValue);
+    const search = searchValue.toLowerCase();
+    return (
+      book.title.toLowerCase().includes(search) ||
+      book.author.toLowerCase().includes(search)
+    );
   });
+  
+  console.log(filteredBooks)
 
+ 
   const handlePriceChange = (id, newPrice) => {
+    const search = searchValue.toLowerCase();
     setBooksData((prevState) =>
       prevState.map((book) =>
         book.id === id ? { ...book, price: Number(newPrice) } : book
@@ -44,8 +53,9 @@ const BookList = () => {
     );
   };
 
-  const handleChange = (e) => {
-    setSearchValue(e.target.value); // Just update the searchValue state
+ 
+  const handleChange = (event) => {
+    setSearchValue(event.target.value); 
   };
 
   return (
@@ -61,21 +71,23 @@ const BookList = () => {
       />
 
       <div className="flexBox">
-        {booksData.map((book) => (
-          <BookCard
-            key={book.id}
-            {...book}
-            onEventHandler={() => eventHandler(book.id)}
-            onToggleStock={() => toggleStock(book.id)}
-            onToggleFavorite={() => toggleFavorite(book.id)}
-            onPriceChange={handlePriceChange}
-          />
-        ))}
+        {filteredBooks.length === 0 ? (
+          <p>No books found</p>
+        ) : (
+          filteredBooks.map((book) => (
+            <BookCard
+              key={book.id}
+              {...book}
+              onEventHandler={() => eventHandler(book.id)}
+              onToggleStock={() => toggleStock(book.id)}
+              onToggleFavorite={() => toggleFavorite(book.id)}
+              onPriceChange={handlePriceChange}
+            />
+          ))
+        )}
       </div>
     </>
   );
 };
 
 export default BookList;
-
-// <Bookcard key={book.id}  (...book)/>

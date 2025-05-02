@@ -1,77 +1,75 @@
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import "./pages.css";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import "./add.css";
 
 
+const AddBookForm = ({ onAddBook }) => {
+  const [formData, setFormData] = useState({
+    title: "",
+    author: "",
+    price: "",
+    genre: "",
+  });
 
+  const navigate = useNavigate();
 
-function AddBookForm(onAddBook) {
-  const [title, setTitle] = useState(""); // step 1
-  const [author, setAuthor] = useState("");
-  const [price, setPrice] = useState(""); // step 1
-  const [genre, setGenre] = useState("");
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('data', formData)
 
-    const newBook = {
-      title, 
-      author,
-      price: parseFloat(price),
-      genre,
-    };
+    const newBook = { ...formData, price: parseFloat(formData.price) };
 
     onAddBook(newBook);
-    setTitle("");
-    setAuthor("");
-    setPrice("");
-    setGenre("");
+    navigate("/books");
+
+    setFormData({ title: "", author: "", price: "", genre: "" });
   };
 
   return (
-    <div className = 'bodyContainer'>
-      <Header />
-      <main>
-        <h1>I'm book form!</h1>
-        <div>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              placeholder="Title"
-            />
-            <input
-              name="author"
-              type="text"
-              value={author}
-              onChange={(e) => setAuthor(e.target.value)}
-              placeholder="Author"
-            />
-            <input
-              name="price"
-              type="number"
-              value={price}
-              onChange={(e) => setPrice(e.target.value)}
-              placeholder="Price"
-            />
-            <input
-              name="genre"
-              type="text"
-              value={genre}
-              onChange={(e) => setGenre(e.target.value)}
-              placeholder="Genre"
-            />
-            <button type="submit">Add book</button>
-          </form>
-        </div>
-        <Footer year={2025} />
-      </main>
-    </div>
+    <><div className='addForm'>
+      <h3>Add new book</h3>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Title"
+          value={formData.title}
+          onChange={handleChange}
+          name="title"
+        />
+        <input
+          type="text"
+          placeholder="Author"
+          value={formData.author}
+          onChange={handleChange}
+          name="author"
+        />
+        <input
+          type="number"
+          placeholder="Price"
+          value={formData.price}
+          onChange={handleChange}
+          name="price"
+        />
+        <input
+          type="text"
+          placeholder="Genre"
+          value={formData.genre}
+          onChange={handleChange}
+          name="genre"
+        />
+        <button type="submit">Add Book</button>
+      </form>
+      </div>
+    </>
+    
   );
-}
+};
 
 export default AddBookForm;
