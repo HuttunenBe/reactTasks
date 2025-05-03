@@ -29,6 +29,8 @@ const AddBookForm = ({ onAddBook }) => {
     onAddBook(newBook);
     navigate("/books");
 
+    
+
     setFormData({ title: "", author: "", price: "", genre: "" });
   };
 
