@@ -1,4 +1,4 @@
-export const books = [
+export const bookss = [
   
   { id: 1, title: 'The Little Girl Who Was Too Fond of Matches', author: 'Gaétan Soucy', price: 44, inStock: false, genre: 'dystopian', isFavorite: true },
   { id: 2, title: 'Pet Sematary', author: 'Stephen King', price: 35, inStock: true, genre: 'horror', isFavorite: true },

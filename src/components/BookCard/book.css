@@ -64,6 +64,10 @@ p {
   font-size: 1.4rem;
 }
 
+#showFavorites{
+  font-size: 1.3rem;
+}
+
 button {
   padding: 0.5rem;
   margin: 0.2rem;

@@ -1,0 +1,290 @@
+{
+  "books": [
+    {
+      "id": "12322",
+      "title": "The Little Girl Who Was Too Fond of Matches",
+      "author": "Gaétan Soucy",
+      "price": 443,
+      "inStock": false,
+      "genre": "dystopian",
+      "isFavorite": true
+    },
+    {
+      "id": "22323",
+      "title": "Pet Sematary",
+      "author": "Stephen King",
+      "price": 35,
+      "inStock": true,
+      "genre": "horror",
+      "isFavorite": true
+    },
+    {
+      "id": "32323",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "price": 25,
+      "inStock": false,
+      "genre": "fantasy",
+      "isFavorite": true
+    },
+    {
+      "id": "42323",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": 20,
+      "inStock": false,
+      "genre": "classic",
+      "isFavorite": false
+    },
+    {
+      "id": "52323",
+      "title": "The Grace Year",
+      "author": "Kim Liggett",
+      "price": 33,
+      "inStock": true,
+      "genre": "dystopian",
+      "isFavorite": false
+    },
+    {
+      "id": "62323",
+      "title": "It",
+      "author": "Stephen King",
+      "price": 22,
+      "inStock": true,
+      "genre": "horror",
+      "isFavorite": true
+    },
+    {
+      "id": "72323",
+      "title": "Alice in Wonderland",
+      "author": "Lewis Carroll",
+      "price": 32,
+      "inStock": true,
+      "genre": "fantasy",
+      "isFavorite": false
+    },
+    {
+      "id": "82323",
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "price": 29,
+      "inStock": false,
+      "genre": "thriller",
+      "isFavorite": false
+    },
+    {
+      "id": "9223",
+      "title": "His Dark Materials",
+      "author": "Philip Pullman",
+      "price": 36,
+      "inStock": true,
+      "genre": "fantasy",
+      "isFavorite": true
+    },
+    {
+      "id": "10223",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "price": 45,
+      "inStock": true,
+      "genre": "fantasy",
+      "isFavorite": false
+    },
+    {
+      "id": "fe9d23",
+      "title": "qwsd",
+      "author": "qwsd",
+      "price": 123,
+      "genre": "qws"
+    },
+    {
+      "id": "1d23a0",
+      "title": "we",
+      "author": "we",
+      "price": 12,
+      "genre": "12",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "f323b8",
+      "title": "Helena",
+      "author": "Helena",
+      "price": 11,
+      "genre": "11",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "9723f3",
+      "title": "34",
+      "author": "34",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "102316",
+      "title": "",
+      "author": "23r",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "e42338",
+      "title": "223",
+      "author": "assa",
+      "price": null,
+      "genre": "as",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "e123c9",
+      "title": "sd",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "d7233f",
+      "title": "Alina",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "e523dc",
+      "title": "",
+      "author": "",
+      "price": null,
+      "genre": "Kauhu",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "653236",
+      "title": "Anna",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "f83251",
+      "title": "Annaliisa",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "923890",
+      "title": "osadkmoadc",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "0538b",
+      "title": "<nn",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "232e06",
+      "title": "Alisa",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "fd332fb",
+      "title": "Anneli",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "3223bc",
+      "title": "Annukka",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "6b32b4",
+      "title": "asdfg",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "ea352",
+      "title": "as",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "1bff",
+      "title": "",
+      "author": "sd",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "6d2e",
+      "title": "sd",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": "f845",
+      "title": "asdsf",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    },
+    {
+      "id": 1747582531672,
+      "title": "q3wed",
+      "author": "",
+      "price": null,
+      "genre": "",
+      "inStock": true,
+      "isFavorite": false
+    }
+  ]
+}

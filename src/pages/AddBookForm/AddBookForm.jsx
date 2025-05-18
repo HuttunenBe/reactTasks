@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import "./add.css";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import axios from "axios";
 
 
 const AddBookForm = ({ onAddBook }) => {
@@ -24,7 +24,24 @@ const AddBookForm = ({ onAddBook }) => {
     e.preventDefault();
     console.log('data', formData)
 
-    const newBook = { ...formData, price: parseFloat(formData.price) };
+    const newBook = {
+
+      ...formData,
+      price: parseFloat(formData.price),
+      inStock: true,
+      isFavorite: false,
+    };
+    axios
+      .post("http://localhost:3010/books", newBook)
+      .then((res) => {
+        onAddBook(res.data);
+        navigate("/books");
+        setFormData({ title: "", author: "", price: "", genre: "" });
+      })
+      .catch((err) => {
+        console.error("Failed to add book:", err);
+      });
+  ;
 
     onAddBook(newBook);
     navigate("/books");

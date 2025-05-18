@@ -1,5 +1,6 @@
 import "./book.css";
 import { useState } from "react";
+import { Link } from "react-router";
 
 const BookCard = ({
   title,
@@ -8,7 +9,7 @@ const BookCard = ({
   genre,
   isFavorite,
   inStock,
-  onEventHandler,
+
   id,
   onToggleFavorite,
   onToggleStock,
@@ -21,11 +22,10 @@ const BookCard = ({
 
 
   const handleSave = () => {
-    onPriceChange(id, newPrice); 
-    setIsEditing(!isEditing); 
+    onPriceChange(id, parseFloat(newPrice));
+    setIsEditing(false);
   };
-
- 
+  
   const handleCancel = () => {
     setNewPrice(price); 
     setIsEditing(!isEditing); 
@@ -67,18 +67,24 @@ const BookCard = ({
               {inStock ? "In stock" : "Out of stock"}
             </button>
 
-            {!inStock && <button onClick={onEventHandler}>Add to Wishlist</button>} 
+         {!inStock && <button className="secondary">Add to Wishlist</button>}
 
-            {isEditing ? (
-              <>
-                <button onClick={handleSave} disabled={isSaveDisabled}>Save</button>
-                <button onClick={handleCancel}>Cancel</button>
-              </>
-            ) : (
-              <button onClick={() => setIsEditing(!isEditing)}>Edit</button> 
-            )}
+           {isEditing ? (
+          <>
+            <button onClick={handleSave} disabled={isSaveDisabled}>
+              Save
+            </button>
+            <button onClick={handleCancel}>Cancel</button>
+          </>
+        ) : (
+          <button className="secondary" onClick={() => setIsEditing(true)}>
+            Edit
+          </button>
+        )}
 
-            <button onClick={onEventHandler}>Read more!</button>
+            <Link className="secondary" to={`/books/${id}`}>
+  Read more!
+</Link>
           </div>
         </div>
       </div>

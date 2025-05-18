@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Box.css'; 
 
 const Box = ({id, name, title, age}) => {
