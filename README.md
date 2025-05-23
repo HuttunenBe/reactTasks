@@ -1,12 +1,18 @@
-# React + Vite
+# 📚 React Books Catalog App A class project completed by following the teacher’s guidance. This React application allows users to browse, search, and manage a simple book catalog. The task aims to 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 What It Does
+- Pages to add books, view books and to view the to do list
+- Displays a list of books
+- Search books by title
+- Toggle favorite and stock status
+- Edit book prices with options to save or cancel
+- Add new books to the books list
+- Uses routing to navigate between pages
+- To do list that fetches data from an external API
+- Read More button for books 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+* React 
+* JavaScript 
+* CSS
