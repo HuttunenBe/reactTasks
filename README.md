@@ -1,4 +1,6 @@
-# 📚 React Books Catalog App A class project completed by following the teacher’s guidance. This React application allows users to browse, search, and manage a simple book catalog. The task aims to 
+# 📚 React Books Catalog App
+
+A class project completed by following the teacher’s guidance. This React application allows users to browse, search and manage a simple book catalog. 
 
 ## 📝 What It Does
 - Pages to add books, view books and to view the to do list
